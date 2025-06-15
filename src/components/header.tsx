@@ -23,7 +23,7 @@ const Header = () => {
         <div style={{backgroundColor: "#212529"}} className="h-[108px]  flex items-center relative">
             <div className="w-[90%] mx-auto flex items-center justify-between md:justify-start">
                 <div>
-                    <Link to="/"><img src={Logo} alt="" className="w-19 cursor-pointer hover:scale-105 transition-transform duration-300"/></Link>
+                    <Link to="/"><img src={Logo} alt="" className="w-19 cursor-pointer md:hover:scale-105 transition-transform duration-300"/></Link>
                 </div>
 
                 <ul className="hidden md:flex gap-6 text-white text-sm ml-25">
