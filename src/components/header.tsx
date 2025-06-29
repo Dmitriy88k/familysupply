@@ -46,7 +46,7 @@ const Header = () => {
             </div>
             
             
-            <div className={`fixed top-[108px] left-0 w-full transition-transform duration-500 ease-in-out z-10 ${menuOpenned ? "translate-y-0" : "translate-y-[100vh]"}`} style={{ backgroundColor: "#212529", height: "calc(100vh - 108px)" }}>
+            <div className={`fixed top-[108px] left-0 w-full transition-transform duration-500 ease-in-out z-10 md:hidden ${menuOpenned ? "translate-y-0" : "translate-y-[100vh]"}`} style={{ backgroundColor: "#212529", height: "calc(100vh - 108px)" }}>
                 <ul className="pl-8 pt-20 flex flex-col text-white text-sm gap-10">
                     <li className="relative after:content-[''] after:block after:h-px after:w-24 after:bg-white after:mt-3">
                     <Link to="/" onClick={() => setMenuOpenned(false)}>Home</Link>
