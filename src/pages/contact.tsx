@@ -14,10 +14,10 @@ const Contact = () => {
                     <li className="line-through">Add Quantity To Products <img src={CheckIcon} alt="" className="inline w-5 ml-3"/></li>
                     <li>Limited Quantity Stock</li>
                     <li>Credit Card fake Number</li>
-                    <li>Create Account</li>
+                    <li className="text-fuchsia-600">Create Account</li>
                     <li>History of orders</li>
-                    <li className="text-fuchsia-600">Likes/Favorites </li>
-                    <li>Search Products</li>
+                    <li className="line-through">Likes/Favorites <img src={CheckIcon} alt="" className="inline w-5 ml-3"/></li>
+                    <li >Search Products</li>
                 </ul>
             </div>
             

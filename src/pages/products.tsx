@@ -3,6 +3,7 @@ import { db } from "../firebase";
 import { collection, getDocs } from "firebase/firestore";
 import { getStorage, ref, getDownloadURL } from "firebase/storage";
 import StarRating from "../components/starRating";
+import LikeProduct from "../components/likeProduct"
 
 
 interface Product {
@@ -66,7 +67,7 @@ const Products = () => {
       <div className="w-[70%] sm:w-[92%] mx-auto grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         
         {products.map((product) => (
-          <div key={product.id} className="bg-white rounded-3xl p-5 shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col md:justify-between md:min-h-[340px]">
+          <div key={product.id} className="relative bg-white rounded-3xl p-5 shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col md:justify-between md:min-h-[340px]">
             
             <div className="flex flex-col ">
               {product.imageUrl ? (
@@ -77,7 +78,9 @@ const Products = () => {
                 </div>
               )}
             </div>
-
+            <div className="absolute top-3 right-3">
+              <LikeProduct />
+            </div>
             <div className="flex flex-col p-5 mx-auto text-center md:text-start md:mx-0 xl:mx-auto xl:text-center">
               <h2 className="font-semibold  h-13 truncate">{product.name}</h2>
               <StarRating rating={product.rating}/>
