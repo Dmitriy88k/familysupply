@@ -23,6 +23,7 @@ fs.createReadStream("products.csv")
           description: item.description,
           price: parseFloat(item.price),
           imagePath: item.imagePath,
+          rating: parseInt(item.rating || "0", 10),
         };
 
         // Optionally use product name or a unique ID

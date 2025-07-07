@@ -7,7 +7,7 @@ const Contact = () => {
             <div className=" max-w-full">
                 <h1 className="font-extrabold text-5xl mb-7 text-pink-800">Plan</h1>
                 <ul className="list-decimal leading-loose font-semibold text-lg">
-                    <li className="text-fuchsia-600">Rating/Reviews</li>
+                    <li className="line-through">Rating/Reviews <img src={CheckIcon} alt="" className="inline w-5 ml-3"/></li>
                     <li>Minimum order = $200</li>
                     <li className="line-through">Apply the "Family" coupon (Clipboard method) <img src={CheckIcon} alt="" className="inline w-5 ml-3"/></li>
                     <li>Checkout</li>
@@ -16,7 +16,7 @@ const Contact = () => {
                     <li>Credit Card fake Number</li>
                     <li>Create Account</li>
                     <li>History of orders</li>
-                    <li>Likes/Favorites</li>
+                    <li className="text-fuchsia-600">Likes/Favorites </li>
                     <li>Search Products</li>
                 </ul>
             </div>

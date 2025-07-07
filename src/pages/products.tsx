@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { db } from "../firebase";
 import { collection, getDocs } from "firebase/firestore";
 import { getStorage, ref, getDownloadURL } from "firebase/storage";
+import StarRating from "../components/starRating";
+
 
 interface Product {
   id: string;
@@ -10,6 +12,7 @@ interface Product {
   price: number;
   imagePath: string;
   imageUrl?: string;
+  rating: number;
 }
 
 const Products = () => {
@@ -44,6 +47,7 @@ const Products = () => {
               price: data.price ?? 0,
               imagePath: data.imagePath ?? "",
               imageUrl,
+              rating: data.rating ?? 0,
             };
           })
         );
@@ -59,7 +63,7 @@ const Products = () => {
 
   return (
     <div className="bg-[#DCEEF9] min-h-screen px-4 py-10">
-      <div className="w-[92%] mx-auto grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="w-[70%] sm:w-[92%] mx-auto grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         
         {products.map((product) => (
           <div key={product.id} className="bg-white rounded-3xl p-5 shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col md:justify-between md:min-h-[340px]">
@@ -76,6 +80,7 @@ const Products = () => {
 
             <div className="flex flex-col p-5 mx-auto text-center md:text-start md:mx-0 xl:mx-auto xl:text-center">
               <h2 className="font-semibold  h-13 truncate">{product.name}</h2>
+              <StarRating rating={product.rating}/>
               <p className="text-sm text-gray-600"> {product.description}</p>
               <p className="font-bold text-black text-md"> ${product.price.toFixed(2)} </p>
               <div className="flex flex-col 2xl:flex-row items-start xl:items-center gap-3 mt-4">
