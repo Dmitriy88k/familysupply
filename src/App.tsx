@@ -8,7 +8,7 @@ import Contact from "./pages/contact";
 
 function App() {
   return (
-    <div>
+    <div className="pt-[108px] md:pt-0">
       <Header/>
       <Routes>
         <Route path="/" element={<Home/>} />

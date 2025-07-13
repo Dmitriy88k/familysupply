@@ -1,9 +1,41 @@
 name,description,price,imagePath,rating
-Ajax Charcoal,Charcoal scent,3.99,ajax_charcoal.webp,4
-Bounty,Soft Paper Towel,21.99,bounty.webp,5
-Brillo,Cleaning Sponges,8.59,brillo_original.webp,3
-Clorox,Toilet Bowl Cleaner,17.99,clorox_toilet.webp,4
-Camay,Hand Soap,8.99,camay.webp,2
-Clorox Spray,Clorox Bleach Spray,9.99,clorox_spray_bleach.webp,5
-Clorox Wipes, Green Package,7.99,clorox_wipes_green.webp,5
-
+Domestos Disinfectant,Domestos kills germs and bacteria fast,7.99,domestos-disinfectant.webp,5
+Dove Bodywash,Cool cucumber scent leaves skin fresh and clean,2.99,dove-cucumber.webp,0
+Downy Softener,Light floral scent leaves clothes soft and fresh,4.99,downy.webp,5
+Downy Softener,Floral freshness that leaves every fabric irresistibly soft,4.99,downy-pink.webp,4
+Drano Max Gel,Clears tough clogs fast,7.99,drano.jpg,5
+Fantastik,Powers through tough grease and grime,4.99, fantastik-lemon.webp,5
+Febreze for Cars,Eliminates car odors leaving fabric refreshingly clean,3.99,febreze-clean-auto.webp,4
+Febreze Downy,Freshness infused to gently refresh fabrics,3.55,febreze-downy.webp,5
+Febreze Gain,Escape to island freshness with every spray,3.99,febreze-island-fresh.webp,5
+Gilette shave foam,Smooth shaving starts with rich creamy foam,5.55,gilette-blue.webp,3
+Gilette shave foam,Classic comfort in every shave with foam,6.25,gilette-red.webp,5
+Glade Air Freshener,Ocean breeze scent brings refreshing calm to air,2.99,glade-1.webp,4
+Glade Air Freshener,Bamboo and waterlily create a serene freshness,2.99,glade-4.webp,0
+Glade Air Freshener,Bright berry notes burst with playful fresh energy,2.99,glade-5.webp,5
+Glade Air Freshener,Cherry and peony bloom into soft floral bliss,2.99,glade-6.webp,2
+Head & Shoulders,Citrus freshness revitalizes scalp for clean healthy hair,4.99,hs-citrus.webp,5
+Head & Shoulders,Classic clean scent refreshes hair with lasting confidence,4.99,hs-classic.webp,5
+Listerine Mouthwash,Removes up to 97% of Germs,2.99,listerine.webp,4
+Lysol,Kills cold & flue viruses,6.99,lysol.webp,5
+Lucky Hand Soap,Gentle formula cleanses hands leaving soft pearl-smooth skin,2.99,mermaid-1.webp,1
+Lucky Hand Soap,Milk and honey nourish hands with gentle cleansing,2.99,mermaid-2.webp,4
+Lucky Hand Soap,Juicy kiwi and melon refresh with vibrant sweetness,2.99,mermaid-3.webp,3
+Lucky Hand Soap,Rich shea and cocoa butter deeply moisturize skin,2.99,mermaid-4.webp,2
+Lucky Hand Soap,Soft rose petals scent gently cleanses and refreshes hands,2.99,mermaid-5.webp,4
+Lucky Hand Soap,Soft rose petals scent gently cleanses and refreshes hands,2.99,mermaid-5.webp,4
+Lucky Hand Soap,Gentle cleanse inspired by ocean waves,2.99,mermaid-6.webp,5
+Palmolive,Bright orange scent powers through grease and grime,3.99,palmolive-orange.webp,5
+Palmolive,Trusted original formula cleans dishes with lasting freshness,3.99,palmolive.webp,5
+Panda Toilet Paper,Soft and strong toilet paper for gentle everyday care,15.99,panda.webp,5
+Pantine Pro-V Shampoo,Boosts hair with volume and rich body care,3.45,pantine-purple.webp,3
+Pantine Pro-V Shampoo,Protects color while nourishing hair with vibrant shine,3.95,pantine-red.webp,4
+Plenty Paper Towels,Strong and absorbent towels for all cleaning tasks,16.99,plenty.webp,5
+Suavitel Softener,"Leaves clothes soft, fresh, and wonderfully fragrant",1.25,suavitel-yellow.webp,5
+Suavitel Softener,Gentle softness that makes laundry feel luxurious,1.25,suavitel.jpg,5
+Tide Family Size,Big bottle cleans whole family’s laundry with ease,25.00,tide-big.webp,5
+Tide Detergent,Powerful HE formula delivers turbo clean every wash,8.99,tide-medium.webp,5
+Tide Pods,Convenient pods deliver powerful cleaning in one dose,12.99,tide-pods.webp,4
+Tide Mini,Compact size cleans small loads with big power,5.99,tide.webp,5
+Colgate Toothbrush,Gentle bristles clean teeth for a healthy smile,12.99,toothbursh.webp,5
+Windex,Streak-free shine cleans glass and mirrors effortlessly,4.99,windex.webp,4

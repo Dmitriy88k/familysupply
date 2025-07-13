@@ -1,5 +1,5 @@
 import Logo from "../assets/logo2.png"
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { useState } from 'react';
 import { useEffect } from 'react';
 
@@ -20,17 +20,18 @@ const Header = () => {
     }
 
     return (
-        <div style={{backgroundColor: "#212529"}} className="h-[108px]  flex items-center relative">
-            <div className="w-[90%] mx-auto flex items-center justify-between md:justify-start">
+        <div style={{ backgroundColor: "#212529" }} className="h-[108px] flex items-center w-full z-50 md:relative fixed top-0 left-0 md:top-auto">
+
+            <div className="w-[90%] mx-auto flex items-center justify-between md:justify-start ">
                 <div>
-                    <Link to="/"><img src={Logo} alt="" className="w-19 cursor-pointer md:hover:scale-105 transition-transform duration-300"/></Link>
+                    <NavLink to="/" onClick={() => setMenuOpenned(false)}><img src={Logo} alt="" className="w-19 cursor-pointer md:hover:scale-105 transition-transform duration-300"/></NavLink>
                 </div>
 
                 <ul className="hidden md:flex gap-6 text-white text-sm ml-25">
-                    <li className="transition-transform duration-200 hover:scale-110 will-change-transform transform-gpu"><Link to="/">Home</Link></li>
-                    <li className="transition-transform duration-200 hover:scale-110 will-change-transform transform-gpu"><Link to="/products">Products</Link></li>
-                    <li className="transition-transform duration-200 hover:scale-110 will-change-transform transform-gpu"><Link to="/about">About Us</Link></li>
-                    <li className="transition-transform duration-200 hover:scale-110 will-change-transform transform-gpu"><Link to="/contact">Contact Us</Link></li>
+                    <li><NavLink to="/" className={({ isActive }) => `${isActive ? 'text-[#FF6F34]' : 'text-white'}`}>Home</NavLink></li>
+                    <li><NavLink to="/products" className={({ isActive }) => `${isActive ? 'text-[#FF6F34]' : 'text-white'}`}>Products</NavLink></li>
+                    <li><NavLink to="/about" className={({ isActive }) => `${isActive ? 'text-[#FF6F34]' : 'text-white'}`}>About Us</NavLink></li>
+                    <li><NavLink to="/contact" className={({ isActive }) => `${isActive ? 'text-[#FF6F34]' : 'text-white'}`}>Contact Us</NavLink></li>
                 </ul>
 
 
@@ -49,16 +50,16 @@ const Header = () => {
             <div className={`fixed top-[108px] left-0 w-full transition-transform duration-500 ease-in-out z-10 md:hidden ${menuOpenned ? "translate-y-0" : "translate-y-[100vh]"}`} style={{ backgroundColor: "#212529", height: "calc(100vh - 108px)" }}>
                 <ul className="pl-8 pt-20 flex flex-col text-white text-sm gap-10">
                     <li className="relative after:content-[''] after:block after:h-px after:w-24 after:bg-white after:mt-3">
-                    <Link to="/" onClick={() => setMenuOpenned(false)}>Home</Link>
+                    <NavLink to="/" onClick={() => setMenuOpenned(false)} className={({ isActive }) => `${isActive ? 'text-[#FF6F34]' : 'text-white'}`}>Home</NavLink>
                     </li>
                     <li className="relative after:content-[''] after:block after:h-px after:w-32 after:bg-white after:mt-3">
-                    <Link to="/products" onClick={() => setMenuOpenned(false)}>Products</Link>
+                    <NavLink to="/products" onClick={() => setMenuOpenned(false)} className={({ isActive }) => `${isActive ? 'text-[#FF6F34]' : 'text-white'}`}>Products</NavLink>
                     </li>
                     <li className="relative after:content-[''] after:block after:h-px after:w-40 after:bg-white after:mt-3">
-                    <Link to="/about" onClick={() => setMenuOpenned(false)}>About Us</Link>
+                    <NavLink to="/about" onClick={() => setMenuOpenned(false)} className={({ isActive }) => `${isActive ? 'text-[#FF6F34]' : 'text-white'}`}>About Us</NavLink>
                     </li>
                     <li className="relative after:content-[''] after:block after:h-px after:w-48 after:bg-white after:mt-3">
-                    <Link to="/contact" onClick={() => setMenuOpenned(false)}>Contact Us</Link>
+                    <NavLink to="/contact" onClick={() => setMenuOpenned(false)} className={({ isActive }) => `${isActive ? 'text-[#FF6F34]' : 'text-white'}`}>Contact Us</NavLink>
                     </li>
                 </ul>
             </div>
