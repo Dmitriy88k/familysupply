@@ -17,9 +17,9 @@ const Contact = () => {
                     <li>Create Account</li>
                     <li>History of orders</li>
                     <li className="line-through">Likes/Favorites <img src={CheckIcon} alt="" className="inline w-5 ml-3"/></li>
-                    <li >Search Products</li>
-                    <li >Create footer</li>
-                    <li className="text-fuchsia-600">Products Carousel</li>
+                    <li className="text-fuchsia-600">Search Products</li>
+                    <li className="line-through">Create footer <img src={CheckIcon} alt="" className="inline w-5 ml-3"/></li>
+                    <li className="line-through">Products Carousel <img src={CheckIcon} alt="" className="inline w-5 ml-3"/></li>
                 </ul>
             </div>
             
