@@ -4,8 +4,11 @@ import { useState } from 'react';
 import { useEffect } from 'react';
 
 
+
+
 const Header = () => {
     const [menuOpenned, setMenuOpenned] = useState(false);
+    
 
     useEffect(() => {
         if (menuOpenned) {
@@ -33,6 +36,9 @@ const Header = () => {
                     <li><NavLink to="/about" className={({ isActive }) => `${isActive ? 'text-[#FF6F34]' : 'text-white'}`}>About Us</NavLink></li>
                     <li><NavLink to="/contact" className={({ isActive }) => `${isActive ? 'text-[#FF6F34]' : 'text-white'}`}>Contact Us</NavLink></li>
                 </ul>
+                
+
+                
 
 
                 <button onClick={handleToggle} className="flex flex-col gap-2 cursor-pointer md:hidden transition-transform durtaion-200 active:scale-90 outline-none focus:outline-none">
